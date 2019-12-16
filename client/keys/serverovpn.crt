@@ -1,0 +1,99 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=SP, ST=MA, L=Madrid, O=Telef, OU=ConnInnov, CN=joseCA/name=EasyRSA/emailAddress=capovpn@telefonica.com
+        Validity
+            Not Before: Dec 16 16:13:22 2019 GMT
+            Not After : Dec 13 16:13:22 2029 GMT
+        Subject: C=SP, ST=MA, L=Madrid, O=Telef, OU=ConnInnov, CN=serverovpn/name=EasyRSA/emailAddress=serverovpn@telefonica.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:dd:8f:3b:53:cd:0a:37:45:50:db:cb:fc:d3:00:
+                    03:55:60:00:9e:25:1c:aa:98:2c:ef:d0:59:c9:54:
+                    65:49:59:8d:85:da:2b:2e:f5:6e:ba:3e:1d:78:7f:
+                    c7:7c:7e:38:1c:c1:28:bc:19:67:8a:a5:6c:59:54:
+                    11:93:06:5a:18:97:2e:ee:8c:30:c0:0e:77:bf:11:
+                    36:58:e9:a8:50:bb:7b:1d:d9:21:11:05:64:c7:a2:
+                    2f:5a:11:6e:f9:a9:af:eb:73:12:86:55:11:54:3b:
+                    00:9a:e9:97:21:04:e1:3a:be:cf:53:de:aa:9e:7c:
+                    72:dd:10:ab:fe:23:16:6f:8f:2d:63:00:89:9a:85:
+                    0d:53:be:35:d3:8f:2d:01:58:19:f7:51:ad:b1:af:
+                    7c:ff:4b:ce:cb:71:cd:be:30:54:01:21:6f:cf:b2:
+                    bc:9f:fb:36:42:cb:f1:c9:a3:b2:60:c7:09:69:a0:
+                    e8:4c:81:8e:89:ee:47:2b:d8:48:7b:ca:e9:16:a1:
+                    50:85:cd:64:36:40:34:a2:f4:30:cd:f7:36:a4:53:
+                    14:84:7f:48:0f:31:38:60:34:1b:46:ec:d4:09:86:
+                    f6:91:76:62:a5:2a:ad:98:1e:9a:a9:53:5a:e6:3a:
+                    1f:5b:31:af:d6:03:90:7d:2c:d8:43:70:9e:36:be:
+                    9a:93
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Server
+            Netscape Comment: 
+                Easy-RSA Generated Server Certificate
+            X509v3 Subject Key Identifier: 
+                56:BA:AA:56:3E:42:5B:91:B3:5F:5D:BC:FA:2A:52:B6:11:FD:5E:A2
+            X509v3 Authority Key Identifier: 
+                keyid:6B:0B:9E:74:FC:07:4A:67:EB:38:05:D8:D9:FF:A7:CA:E7:3B:1D:40
+                DirName:/C=SP/ST=MA/L=Madrid/O=Telef/OU=ConnInnov/CN=joseCA/name=EasyRSA/emailAddress=capovpn@telefonica.com
+                serial:F2:71:65:CE:92:9F:14:24
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:serverovpn
+    Signature Algorithm: sha256WithRSAEncryption
+         0c:f5:19:41:fe:0b:17:ec:2c:11:a9:3f:cc:94:e8:56:ba:c0:
+         59:69:c5:14:8a:5f:d7:a3:48:d5:04:f3:1f:79:e7:98:a2:1d:
+         27:19:bc:96:90:e4:27:c6:c8:12:ab:0c:bb:06:e7:58:90:66:
+         d0:64:86:8e:f4:fe:e6:93:cc:4b:4c:e1:64:2b:31:d0:bd:f7:
+         e9:c5:d6:aa:ef:5e:55:24:14:85:60:62:4e:4f:3f:e9:b8:1f:
+         36:c7:53:a6:77:12:42:d2:86:70:39:13:7d:e7:74:28:bc:3f:
+         1e:40:f9:6b:dd:c3:b1:a6:26:b9:30:d9:10:d8:9c:50:50:00:
+         73:35:9e:1d:cb:0f:7d:f9:aa:3e:22:3e:c4:42:78:0c:92:97:
+         1e:67:81:6a:3b:0a:56:4e:b4:4c:02:1a:41:13:52:df:d3:f1:
+         e7:ff:81:00:9f:aa:9c:41:2c:2a:31:a9:0d:49:f3:00:2a:27:
+         0c:1d:ec:c2:6e:30:88:25:46:0a:02:45:59:25:ae:55:08:4d:
+         29:8f:4b:9f:95:7b:14:8f:31:b7:d6:94:a3:9b:f8:8d:8c:55:
+         85:35:70:76:5a:cb:f8:ed:3f:1c:88:e6:bb:e1:76:af:b3:67:
+         47:5e:ae:86:74:e2:23:51:cc:80:9b:9e:b2:68:4a:2e:49:22:
+         d2:8c:f5:f8
+-----BEGIN CERTIFICATE-----
+MIIFOTCCBCGgAwIBAgIBATANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCU1Ax
+CzAJBgNVBAgTAk1BMQ8wDQYDVQQHEwZNYWRyaWQxDjAMBgNVBAoTBVRlbGVmMRIw
+EAYDVQQLEwlDb25uSW5ub3YxDzANBgNVBAMTBmpvc2VDQTEQMA4GA1UEKRMHRWFz
+eVJTQTElMCMGCSqGSIb3DQEJARYWY2Fwb3ZwbkB0ZWxlZm9uaWNhLmNvbTAeFw0x
+OTEyMTYxNjEzMjJaFw0yOTEyMTMxNjEzMjJaMIGgMQswCQYDVQQGEwJTUDELMAkG
+A1UECBMCTUExDzANBgNVBAcTBk1hZHJpZDEOMAwGA1UEChMFVGVsZWYxEjAQBgNV
+BAsTCUNvbm5Jbm5vdjETMBEGA1UEAxMKc2VydmVyb3ZwbjEQMA4GA1UEKRMHRWFz
+eVJTQTEoMCYGCSqGSIb3DQEJARYZc2VydmVyb3ZwbkB0ZWxlZm9uaWNhLmNvbTCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAN2PO1PNCjdFUNvL/NMAA1Vg
+AJ4lHKqYLO/QWclUZUlZjYXaKy71bro+HXh/x3x+OBzBKLwZZ4qlbFlUEZMGWhiX
+Lu6MMMAOd78RNljpqFC7ex3ZIREFZMeiL1oRbvmpr+tzEoZVEVQ7AJrplyEE4Tq+
+z1Peqp58ct0Qq/4jFm+PLWMAiZqFDVO+NdOPLQFYGfdRrbGvfP9Lzstxzb4wVAEh
+b8+yvJ/7NkLL8cmjsmDHCWmg6EyBjonuRyvYSHvK6RahUIXNZDZANKL0MM33NqRT
+FIR/SA8xOGA0G0bs1AmG9pF2YqUqrZgemqlTWuY6H1sxr9YDkH0s2ENwnja+mpMC
+AwEAAaOCAYEwggF9MAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgZAMDQGCWCG
+SAGG+EIBDQQnFiVFYXN5LVJTQSBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRl
+MB0GA1UdDgQWBBRWuqpWPkJbkbNfXbz6KlK2Ef1eojCBzgYDVR0jBIHGMIHDgBRr
+C550/AdKZ+s4BdjZ/6fK5zsdQKGBn6SBnDCBmTELMAkGA1UEBhMCU1AxCzAJBgNV
+BAgTAk1BMQ8wDQYDVQQHEwZNYWRyaWQxDjAMBgNVBAoTBVRlbGVmMRIwEAYDVQQL
+EwlDb25uSW5ub3YxDzANBgNVBAMTBmpvc2VDQTEQMA4GA1UEKRMHRWFzeVJTQTEl
+MCMGCSqGSIb3DQEJARYWY2Fwb3ZwbkB0ZWxlZm9uaWNhLmNvbYIJAPJxZc6SnxQk
+MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDAVBgNVHREEDjAMggpz
+ZXJ2ZXJvdnBuMA0GCSqGSIb3DQEBCwUAA4IBAQAM9RlB/gsX7CwRqT/MlOhWusBZ
+acUUil/Xo0jVBPMfeeeYoh0nGbyWkOQnxsgSqwy7BudYkGbQZIaO9P7mk8xLTOFk
+KzHQvffpxdaq715VJBSFYGJOTz/puB82x1OmdxJC0oZwORN953QovD8eQPlr3cOx
+pia5MNkQ2JxQUABzNZ4dyw99+ao+Ij7EQngMkpceZ4FqOwpWTrRMAhpBE1Lf0/Hn
+/4EAn6qcQSwqMakNSfMAKicMHezCbjCIJUYKAkVZJa5VCE0pj0uflXsUjzG31pSj
+m/iNjFWFNXB2Wsv47T8ciOa74Xavs2dHXq6GdOIjUcyAm56yaEouSSLSjPX4
+-----END CERTIFICATE-----

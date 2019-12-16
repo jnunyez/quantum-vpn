@@ -1,0 +1,2 @@
+V	291213161322Z		01	unknown	/C=SP/ST=MA/L=Madrid/O=Telef/OU=ConnInnov/CN=serverovpn/name=EasyRSA/emailAddress=serverovpn@telefonica.com
+V	291213161420Z		02	unknown	/C=SP/ST=MA/L=Madrid/O=Telef/OU=ConnInnov/CN=clientovpn/name=EasyRSA/emailAddress=clientovpn@telefonica.com
