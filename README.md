@@ -193,4 +193,4 @@ For TLS 1.2 on the control connection, tls-cipher is the OpenVPN configuration d
 ## TODO
 
 - Use picnic to sign certificatges)
-- Build and tune libocs from sources
+- Build and tune liboqs from sources
