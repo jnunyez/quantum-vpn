@@ -4,13 +4,18 @@ Starting point is Microsoft project:
 
 https://github.com/microsoft/PQCrypto-VPN
 
+This is a repo used to play with post quantum crypto project from Microsoft.
+
+client folder builds a vagrant machine with all the necessary requiremetns to run a PQ-VPN client
+server folder builds a vagrant machine with all the necessary requirements to run a PQ-VPN server.
+
 ## Installing
 
 ```
 wget https://github.com/microsoft/PQCrypto-VPN/releases/download/PQCrypto-1.1/pq-openvpn-linux-staged.tar.gz
 ```
- Unpack pq-openvpn-linux-staged.tgz from the root directory as root. This will drop the installation in /usr/local/openvpn as well as an automatic startup script suitable for Ubuntu hosts running systemd.
- sudo su -
+
+Unpack pq-openvpn-linux-staged.tgz from the root directory as root. This will drop the installation in /usr/local/openvpn as well as an automatic startup script suitable for Ubuntu hosts running systemd.
 
 ```
 cd /
@@ -162,14 +167,14 @@ This is going to take a long time
 
 ## Server
 
-Start the server:
+Start the server on the vagrant machine:
 
 ```
 /usr/local/openvpn/sbin/openvpn --config ../etc/server.ovpn
 ```
 
 ## Client
-Start the client:
+Start the client on the vagrant machine:
 
 ```
 /usr/local/openvpn/sbin/openvpn --config ../etc/client.ovpn
@@ -177,7 +182,8 @@ Start the client:
 
 ## Check version
 
-The current release of PQCrypto-VPN has only been tested against the OQS fork of OpenSSL 1.0.2. 
+
+The release under test has been tested against the open quantum safe library fork of OpenSSL 1.0.2. 
 
 ```
  /usr/local/openvpn/sbin/openvpn --version
@@ -192,5 +198,5 @@ For TLS 1.2 on the control connection, tls-cipher is the OpenVPN configuration d
 
 ## TODO
 
-- Use picnic to sign certificatges)
+- Use picnic to sign certificates
 - Build and tune liboqs from sources
