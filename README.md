@@ -19,7 +19,11 @@ Unpack pq-openvpn-linux-staged.tgz from the root directory as root. This will dr
 
 ```
 cd /
-tar -xvzf pq-openvpn-linux-staged.tar.gz 
+tar -xvzf pq-openvpn-linux-staged.tar.gz
+```
+
+Then install easy-rsa on the vpn server to generate RSA certs:
+
 apt-get install easy-rsa
 cd /usr/share/easy-rsa
 ```
