@@ -24,6 +24,7 @@ tar -xvzf pq-openvpn-linux-staged.tar.gz
 
 Then install easy-rsa on the vpn server to generate RSA certs:
 
+```
 apt-get install easy-rsa
 cd /usr/share/easy-rsa
 ```
