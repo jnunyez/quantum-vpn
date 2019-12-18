@@ -21,15 +21,16 @@ Unpack pq-openvpn-linux-staged.tgz from the root directory as root. This will dr
 cd /
 tar -xvzf pq-openvpn-linux-staged.tar.gz
 ```
+## Generate easy-rsa certificates
 
-Then install easy-rsa on the vpn server to generate RSA certs:
+Then install `easy-rsa` on the vpn server to generate RSA certs:
 
 ```
 apt-get install easy-rsa
 cd /usr/share/easy-rsa
 ```
 
-Generate CA:
+Generate CA with easy-rsa:
 
 
 ```
@@ -111,7 +112,7 @@ Write out database with 1 new entries
 Data Base Updated
 ```
 
-Build client certificate:
+Build easy-rsa client certificate:
 
 ```
 ./build-key clientovpn
@@ -170,22 +171,22 @@ This is going to take a long time
 .........+...............+..........................................................+...
 ```
 
-## Server
+## Server VPN
 
-Start the server on the vagrant machine:
+Start the server as user root (very secure), on the vagrant machine:
 
 ```
 /usr/local/openvpn/sbin/openvpn --config ../etc/server.ovpn
 ```
 
-## Client
-Start the client on the vagrant machine:
+## Client VPN
+Start the client as user root (very secure), on the vagrant machine:
 
 ```
 /usr/local/openvpn/sbin/openvpn --config ../etc/client.ovpn
 ```
 
-## Check version
+### Check PQ-OVPN version
 
 
 The release under test has been tested against the open quantum safe library fork of OpenSSL 1.0.2. 
@@ -194,14 +195,16 @@ The release under test has been tested against the open quantum safe library for
  /usr/local/openvpn/sbin/openvpn --version
 liboqs 1.0.0 [git:notices/65fd62a9e8038cf2] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [MH/PKTINFO] [AEAD] built on Jul 24 2018
 library versions: OpenSSL 1.0.2m-dev  xx XXX xxxx, LZO 2.08
-````
-liboqs is the library for quantum safe cryptographic algorithms
+```
+where liboqs is the library for quantum safe cryptographic algorithms within OpenSSL.
 
-For TLS 1.2 on the control connection, tls-cipher is the OpenVPN configuration directive we used to select the relevant PQ ciphersuites
+For TLS 1.2 on the control connection, tls-cipher is the OpenVPN configuration directive we used to select the relevant PQ ciphersuites. In particular our configured choice:
 
+```
+tls-cipher OQSKEX-SIDH-MSR-ECDHE-RSA-AES256-GCM-SHA384:OQSKEX-LWE-FRODO-RECOMMENDED-ECDHE-RSA-AES256-GCM-SHA384
+```
 
 
 ## TODO
 
 - Use picnic to sign certificates
-- Build and tune liboqs from sources
